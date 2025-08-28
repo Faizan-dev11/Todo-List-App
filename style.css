@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background: #fefefe;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+header {
+    background: linear-gradient(90deg, #a29bfe, #c29fff);
+    color: #fefefe;
+    padding: 25px 0px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+
+}
+header nav .btn{
+    margin-left: 10px;
+    background-color: #8ddccd;
+    height: 30px;
+    padding: 5px; ;
+    width: 100px;
+    border-radius: 8px;
+    color: #fefefe;
+    
+   
+}
+header nav .about{
+    padding-top: 5px;
+}
+header nav .main{
+    margin-right: 10px;
+    width: 70px;
+}
+header nav .btn:hover {
+    background-color: #01ffcc;
+}
+
+
+
+main {
+    flex: 1;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.input-sec {
+
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+.input-sec input{
+    padding: 12px 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+}
+
+.input-sec button{
+    padding: 12px 7px;
+    border-radius: 20px;
+    background-color:  #00b894;
+    color: #fefefe;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.input-sec button:hover{
+    background-color: #01ffcc;
+}
+
+.task-filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-filters .filter{
+    padding: 8px 20px;   
+    border-radius: 20px;
+    background-color:  #dfe6e9;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+
+}
+.task-filters .filter.active,
+.task-filters .filter:hover{
+    background-color: #00b894;
+    color: #fefefe;
+
+}
+#task-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#task-list li{
+    display: flex;
+    background-color: #fefefe;
+    padding: 15px 10px;
+    border: #01ffcc 1px solid;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.btn-del{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
